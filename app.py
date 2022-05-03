@@ -14,13 +14,12 @@ if __name__ == '__main__':
 	filename = date + '_' + event + '.csv'
 	
 	# Get length of file if it exists.
-	length = 0
 	try:
 		with open(filename, 'r') as f:
 			reader = csv.reader(f, delimiter=',')
 			length = len(list(reader))
 	except:
-		pass
+		length = 0
 	
 	# Write routine
 	with open(filename, 'a') as f:
