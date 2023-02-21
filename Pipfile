@@ -4,6 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+django = ">=4,<4.2"
+mysqlclient = "*"
+redis = ">=3"
+hiredis = "*"
+celery = "*"
+gunicorn = "*"
 
 [dev-packages]
 
